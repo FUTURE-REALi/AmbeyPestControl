@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ambey Pest Control</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+</head>
+<body>
+    <div class="top-menu">
+        <img src="LOGO.png" alt="N/A">
+            <div class="menu-bar">
+                <button><a href="home.html">HOME</a></button>
+                <button>ABOUT US</button>
+                <button id="branches">BRANCHES</button>
+                <div class="services-list">
+                    <button id="services">SERVICES <img src="down-arrow-icon.png" alt=""></button>
+                    <div class="types-of-services">
+                        <button>ANTS TREATMENT</button>
+                        <button>COCKROACHES TREATMENT</button>
+                        <button>ANTI-TERMITE</button>
+                        <button>WOOD BORER TREATMENT</button>
+                        <button>RODENT TREATMENT</button>
+                        <button>BED BUGS TREATMENT</button>
+                        <button>TREATMENT GPC</button>
+                    </div>
+                </div>
+                <button id="knowledgebase">KNOWLEDGEBASE</button>
+                <button>PRODUCTS</button>
+                <button>CONTACT US</button>
+            </div>
+    </div>
+    <div class="slideshow">
+        <img id="img1" src="img 1.jpg" alt="">
+        <img id="img2" src="img 2.jpg" alt="">
+        <img id="img3" src="img 3.jpg" alt="">
+        <img id="img4" src="img 4.jpg" alt="">
+        <img id="img5" src="img 5.jpg" alt="">
+        <img id="img6" src="img 6.jpg" alt="">
+        <img id="img7" src="img 7.jpg" alt="">
+        <img id="img8" src="img 8.jpg" alt="">
+    </div>
+    <div class="img-selector">
+        <label for="img-selection"></label>
+        <input type="radio" name="selection" id="selector1" onclick="currentslide(0)">
+        <label for="img-selection"></label>
+        <input type="radio" name="selection" id="selector2" onclick="currentslide(1)">
+        <label for="img-selection"></label>
+        <input type="radio" name="selection" id="selector3" onclick="currentslide(2)">
+        <label for="img-selection"></label>
+        <input type="radio" name="selection" id="selector4" onclick="currentslide(3)">
+        <label for="img-selection"></label>
+        <input type="radio" name="selection" id="selector5" onclick="currentslide(4)">
+        <label for="img-selection"></label>
+        <input type="radio" name="selection" id="selector6" onclick="currentslide(5)">
+        <label for="img-selection"></label>
+        <input type="radio" name="selection" id="selector7" onclick="currentslide(6)">
+        <label for="img-selection"></label>
+        <input type="radio" name="selection" id="selector8" onclick="currentslide(7)">
+    </div>
+    <div class="price-chart">
+        <div class="choice-for-service">
+            <select id="List-of-services">
+                <option value="" selected disabled hidden>Select Service</option>
+                <option value="Ants-Treatment">Ants Treatment</option>
+                <option value="Cockroaches-Treatment">Cockroaches Treatment</option>
+                <option value="Anti-Termite">Anti Termite</option>
+                <option value="Wood-Borer-Treatment">Wood Borer Treatment</option>
+                <option value="Rodent-Treatment">Rodent Treatment</option>
+                <option value="Bed-Bugs-Treatment">Bed Bug Treatment</option>
+                <option value="Treatment-GPC">Treatment GPC</option>
+            </select>
+        </div>
+        <div class="room-size">
+            <select id="size-of-room">
+                <option value="" selected disabled hidden>Select BHK</option>
+                <option value="1BHK">1BHK</option>
+                <option value="2BHK">2BHK</option>
+                <option value="3BHK">3BHK</option>
+                <option value="4BHK">4BHK</option>
+                <option value="5BHK">5BHK</option>
+                <option value="6BHK">6BHK</option>
+                <option value="7BHK">7BHK</option>
+                <option value="FarmHouse">FarmHouse</option>
+            </select>
+        </div>
+        <div class="plan-type">
+            <select id="types-of-plan">
+                <option value="" selected disabled hidden>Select Plan</option>
+                <option value="Single Service">Single Service</option>
+                <option value="3 Services">3 Services (1 year)</option>
+                <option value="6 Services">6 Services (2year)</option>
+            </select>
+        </div>
+    </div>
+    <div class="quotation">
+         <div class="pricing" id="premium-cockroach-control-1BHK">
+            <h5 id="premium-cockroach-control-recommendation">Recommended</h5>
+            <h1 id="premium-cockroach-control-heading">Premium Cockroach Treatment</h1>
+            <ul>
+                <li>Spray and Gel Treatment along with Cracks,Sealings and Kitchen Drain Cleaning</li>
+                <li>Complimentary Ants Treatment</li>
+            </ul>
+            <div class="price-details-premium-cockroach-treatment">
+                <div class="pricing-cockroach-premium-offline">
+                    <h3>Payment After Service</h3>
+                    <h1 id="price-cockroach-premium-offline">Rs.4699/-</h1>
+                    <h5>*Price may vary on the basis of Size of Treatment Area</h5>
+                </div>
+                <div class="pricing-cockroach-premium-online">
+                    <h3>Payment Before Service</h3>
+                    <h1 id="price-cockroach-premium-online">Rs.4499/-</h1>
+                    <h5>*Price may vary on the basis of Size of Treatment Area</h5>
+                </div>
+            </div>
+            <a href="" class="more-details-premium">Not sure about Treatment Area?</a>
+            <a href=""class="more-details-premium">Click here to Read more</a>
+            <a href="tel:9999300351" class="callback">Callback</a>
+        </div>
+        <div class="pricing" id="regular-cockroach-control-1BHK">
+            <h5 id="regular-cockroach-control-recommendation">Recommended</h5>
+            <h1 id="regular-cockroach-control-heading">Regular Cockroach Treatment</h1>
+            <ul>
+                <li>Spray and Gel Treatment along with Cracks,Sealings and Kitchen Drain Cleaning</li>
+                <li>No Complimentary Ants Treatment</li>
+            </ul>
+            <div class="price-details-regular-cockroach-treatment">
+                <div class="pricing-cockroach-regular-offline">
+                    <h3>Payment After Service</h3>
+                    <h1 id="price-cockroach-regular-offline">Rs.4199/-</h1>
+                    <h5>*Price may vary on the basis of Size of Treatment Area</h5>
+                </div>
+                <div class="pricing-cockroach-regular-online">
+                    <h3>Payment Before Service</h3>
+                    <h1 id="price-cockroach-premium-online">Rs.3999/-</h1>
+                    <h5>*Price may vary on the basis of Size of Treatment Area</h5>
+                </div>
+            </div>
+            <a href="" class="more-details-regular">Not sure about Treatment Area?</a>
+            <a href=""class="more-details-regular">Click here to Read more</a>
+            <a href="tel:9999300351" class="callback">Callback</a>
+        </div>
+        <div class="pricing" id="premium-cockroach-control-2BHK">
+            <h5 id="premium-cockroach-control-recommendation">Recommended</h5>
+            <h1 id="premium-cockroach-control-heading">Premium Cockroach Treatment</h1>
+            <ul>
+                <li>Spray and Gel Treatment along with Cracks,Sealings and Kitchen Drain Cleaning</li>
+                <li>Complimentary Ants Treatment</li>
+            </ul>
+            <div class="price-details-premium-cockroach-treatment">
+                <div class="pricing-cockroach-premium-offline">
+                    <h3>Payment After Service</h3>
+                    <h1 id="price-cockroach-premium-offline">Rs.5499/-</h1>
+                    <h5>*Price may vary on the basis of Size of Treatment Area</h5>
+                </div>
+                <div class="pricing-cockroach-premium-online">
+                    <h3>Payment Before Service</h3>
+                    <h1 id="price-cockroach-premium-online">Rs.4999/-</h1>
+                    <h5>*Price may vary on the basis of Size of Treatment Area</h5>
+                </div>
+            </div>
+            <a href="" class="more-details-premium">Not sure about Treatment Area?</a>
+            <a href=""class="more-details-premium">Click here to Read more</a>
+            <a href="tel:9999300351" class="callback">Callback</a>
+        </div>
+        <div class="pricing" id="regular-cockroach-control-2BHK">
+            <h5 id="regular-cockroach-control-recommendation">Recommended</h5>
+            <h1 id="regular-cockroach-control-heading">Regular Cockroach Treatment</h1>
+            <ul>
+                <li>Spray and Gel Treatment along with Cracks,Sealings and Kitchen Drain Cleaning</li>
+                <li>No Complimentary Ants Treatment</li>
+            </ul>
+            <div class="price-details-regular-cockroach-treatment">
+                <div class="pricing-cockroach-regular-offline">
+                    <h3>Payment After Service</h3>
+                    <h1 id="price-cockroach-regular-offline">Rs.4799/-</h1>
+                    <h5>*Price may vary on the basis of Size of Treatment Area</h5>
+                </div>
+                <div class="pricing-cockroach-regular-online">
+                    <h3>Payment Before Service</h3>
+                    <h1 id="price-cockroach-premium-online">Rs.4299/-</h1>
+                    <h5>*Price may vary on the basis of Size of Treatment Area</h5>
+                </div>
+            </div>
+            <a href="" class="more-details-regular">Not sure about Treatment Area?</a>
+            <a href=""class="more-details-regular">Click here to Read more</a>
+            <a href="tel:9999300351" class="callback">Callback</a>
+        </div>
+    </div>
+    <script src="home.js"></script>
+</body>
+</html>

@@ -191,20 +191,6 @@ body{
     text-decoration: none;
     color: black;
 }
-.quotation-container button{
-    background-color: #222831;
-    color: white;
-    font-size: 12px;
-    padding: 10px 45px;
-    border: 1px solid transparent;
-    border-radius: 8px;
-    font-weight: 600;
-    letter-spacing: 0.6;
-    text-transform: uppercase;
-    height: 40px;
-    margin: 10px 0;
-    cursor: pointer;
-}
 .back-cover{
     position: absolute;
     height: 100%;
@@ -315,6 +301,20 @@ body{
 }
 .toggle-panel *{
     background: linear-gradient(to right,#1B5E20,#2db336);
+}
+.toggle-panel button{
+    background: white;
+    color: black;
+    font-size: 12px;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    font-weight: 600;
+    letter-spacing: 0.8;
+    text-transform: uppercase;
+    height: 40px;
+    margin: 10px 0;
+    cursor: pointer;
 }
 .front-panel{
     display: flex;

@@ -28,30 +28,40 @@ function autoslideshow(){
     dotcount++;
     setTimeout(autoslideshow,5000);
 }
+var container=document.getElementById('quotation-container');
+var premiumBtn = document.getElementById('premium-button');
+var regularBtn = document.getElementById('regular-button');
+
+regularBtn.addEventListener("click",()=>{
+    container.classList.add("active");
+});
+premiumBtn.addEventListener("click",()=>{
+    container.classList.remove("active");
+});
 
 
-var servicechoice=document.getElementById("List-of-services");
-var typesofservices=document.getElementsByClassName("pricing");
-var roomcapacity=document.getElementById("size-of-room");
-for(var i=0;i<typesofservices.length;i++){
-    typesofservices[i].style.display="none";
-}
-servicechoice.addEventListener("click",function(){
-    if(servicechoice.value==="Cockroaches-Treatment"){
-        roomcapacity.addEventListener("click",function(){
-            if(roomcapacity.value==="1BHK"){
-                for(var i=0;i<typesofservices.length;i++){
-                    typesofservices[i].style.display="none";
-                }
-                typesofservices[0].style.display="block";
-                typesofservices[1].style.display="block";
-            }
-            if(roomcapacity.value==="2BHK"){
-                for(var i=0;i<typesofservices.length;i++){
-                    typesofservices[i].style.display="none";
-                }
-                typesofservices[2].style.display="block";
-                typesofservices[3].style.display="block";
-            }
-})}})
+// var servicechoice=document.getElementById("List-of-services");
+// var typesofservices=document.getElementsByClassName("pricing");
+// var roomcapacity=document.getElementById("size-of-room");
+// for(var i=0;i<typesofservices.length;i++){
+//     typesofservices[i].style.display="none";
+// }
+// servicechoice.addEventListener("click",function(){
+//     if(servicechoice.value==="Cockroaches-Treatment"){
+//         roomcapacity.addEventListener("click",function(){
+//             if(roomcapacity.value==="1BHK"){
+//                 for(var i=0;i<typesofservices.length;i++){
+//                     typesofservices[i].style.display="none";
+//                 }
+//                 typesofservices[0].style.display="block";
+//                 typesofservices[1].style.display="block";
+//             }
+//             if(roomcapacity.value==="2BHK"){
+//                 for(var i=0;i<typesofservices.length;i++){
+//                     typesofservices[i].style.display="none";
+//                 }
+//                 typesofservices[2].style.display="block";
+//                 typesofservices[3].style.display="block";
+//             }
+// })}})
 

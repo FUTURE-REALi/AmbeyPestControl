@@ -6,12 +6,15 @@
     <title>Ambey Pest Control</title>
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Poppins" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="top-menu">
         <img src="LOGO.png" alt="N/A">
             <div class="menu-bar">
-                <button><a href="home.html">HOME</a></button>
+                <button><a href="index.html">HOME</a></button>
                 <button>ABOUT US</button>
                 <button id="branches">BRANCHES</button>
                 <div class="services-list">
@@ -65,6 +68,7 @@
                 <option value="" selected disabled hidden>Select Service</option>
                 <option value="Ants-Treatment">Ants Treatment</option>
                 <option value="Cockroaches-Treatment">Cockroaches Treatment</option>
+                <option value="General-Pest-Control">General Pest Control</option>
                 <option value="Anti-Termite">Anti Termite</option>
                 <option value="Wood-Borer-Treatment">Wood Borer Treatment</option>
                 <option value="Rodent-Treatment">Rodent Treatment</option>
@@ -94,99 +98,85 @@
             </select>
         </div>
     </div>
-    <div class="quotation">
-         <div class="pricing" id="premium-cockroach-control-1BHK">
-            <h5 id="premium-cockroach-control-recommendation">Recommended</h5>
-            <h1 id="premium-cockroach-control-heading">Premium Cockroach Treatment</h1>
-            <ul>
-                <li>Spray and Gel Treatment along with Cracks,Sealings and Kitchen Drain Cleaning</li>
-                <li>Complimentary Ants Treatment</li>
-            </ul>
-            <div class="price-details-premium-cockroach-treatment">
-                <div class="pricing-cockroach-premium-offline">
-                    <h3>Payment After Service</h3>
-                    <h1 id="price-cockroach-premium-offline">Rs.4699/-</h1>
-                    <h5>*Price may vary on the basis of Size of Treatment Area</h5>
-                </div>
-                <div class="pricing-cockroach-premium-online">
-                    <h3>Payment Before Service</h3>
-                    <h1 id="price-cockroach-premium-online">Rs.4499/-</h1>
-                    <h5>*Price may vary on the basis of Size of Treatment Area</h5>
-                </div>
-            </div>
-            <a href="" class="more-details-premium">Not sure about Treatment Area?</a>
-            <a href=""class="more-details-premium">Click here to Read more</a>
-            <a href="tel:9999300351" class="callback">Callback</a>
-        </div>
-        <div class="pricing" id="regular-cockroach-control-1BHK">
-            <h5 id="regular-cockroach-control-recommendation">Recommended</h5>
-            <h1 id="regular-cockroach-control-heading">Regular Cockroach Treatment</h1>
-            <ul>
-                <li>Spray and Gel Treatment along with Cracks,Sealings and Kitchen Drain Cleaning</li>
-                <li>No Complimentary Ants Treatment</li>
-            </ul>
-            <div class="price-details-regular-cockroach-treatment">
+    <div class="quotation-container" id="quotation-container">
+        <div class="back-cover regular">
+            <div class="pricing" id="regular-cockroach-control-1BHK">
+                <h1 id="regular-cockroach-control-heading">Regular Cockroach Treatment</h1>
+                <ul>
+                    <li>Spray and Gel Treatment along with Cracks,Sealings and Kitchen Drain Cleaning</li>
+                    <li>No Complimentary Ants Treatment</li>
+                </ul>
+                <div class="price-details-regular-cockroach-treatment">
                 <div class="pricing-cockroach-regular-offline">
-                    <h3>Payment After Service</h3>
-                    <h1 id="price-cockroach-regular-offline">Rs.4199/-</h1>
-                    <h5>*Price may vary on the basis of Size of Treatment Area</h5>
+                    <h3>Postpaid Service</h3>
+                        <h1 id="price-cockroach-regular-offline">Rs.4199/-</h1>
+                        <h5>*Price may vary on the basis of Size of Treatment Area</h5>
+                    </div>
+                    <div class="pricing-cockroach-regular-online">
+                        <h3>Prepaid Service</h3>
+                        <h1 id="price-cockroach-premium-online">Rs.3999/-</h1>
+                        <h5>*Price may vary on the basis of Size of Treatment Area</h5>
+                    </div>
                 </div>
-                <div class="pricing-cockroach-regular-online">
-                    <h3>Payment Before Service</h3>
-                    <h1 id="price-cockroach-premium-online">Rs.3999/-</h1>
-                    <h5>*Price may vary on the basis of Size of Treatment Area</h5>
+                <a href="" class="more-details-regular">Not sure about Treatment Area?</a>
+                <a href=""class="more-details-regular">Click here to Read more</a>
+                <a href="tel:9999300351" class="callback">Callback</a>
+            </div>
+        </div>
+        <div class="back-cover premium">  
+            <div class="pricing" id="premium-cockroach-control-1BHK">
+                    <h5 id="premium-cockroach-control-recommendation">Recommended</h5>
+                    <h1 id="premium-cockroach-control-heading">Premium Cockroach Treatment</h1>
+                    <ul>
+                        <li>Spray and Gel Treatment</li>
+                        <li>Cracks,Sealings and Kitchen Drain Cleaning</li>
+                        <li>Complimentary Ants Treatment</li>
+                    </ul>
+                    <div class="price-details-premium-cockroach-treatment">
+                        <div class="pricing-cockroach-premium-offline">
+                            <h3>Postpaid Service</h3>
+                            <h1 id="price-cockroach-premium-offline">Rs.4699/-</h1>
+                            <h5>*Price may vary on the basis of Size of Treatment Area</h5>
+                        </div>
+                        <div class="pricing-cockroach-premium-online">
+                            <h3>Prepaid Service</h3>
+                            <h1 id="price-cockroach-premium-online">Rs.4499/-</h1>
+                            <h5>*Price may vary on the basis of Size of Treatment Area</h5>
+                        </div>
+                    </div>
+                    <a href="" class="more-details-premium">Not sure about Treatment Area?</a>
+                    <a href=""class="more-details-premium">Click here to Read more</a>
+                    <a href="tel:9999300351" class="callback">Callback</a>
+            </div>
+        </div>
+            <div class="front-cover">
+                <div class="toggle-panel">
+                    <div class="front-panel regular-front">
+                        <h1>Regular Cockroach Treatment</h1>
+                        <ul>
+                            <li>Say goodbye to unwanted pests with our reliable and effective cockroach treatment</li>
+                            <li>Our expert technicians use safe and advanced methods to eliminate cockroaches from your home.</li>
+                            <li>Enjoy peace of mind knowing that your living space is protected from these resilient insects.</li>
+                            <li>With our affordable and customizable plans, maintaining a cockroach-free environment has never been this easier.</li>
+                            <li>Choose simplicity and effectiveness with our Regular Cockroach Treatment Plan.</li>
+                        </ul>
+                        <h2>To know more about services provided and Price details</h2>
+                        <button id="regular-button">Click here</button>
+                    </div>
+                    <div class="front-panel premium-front">
+                        <h1>Premium Cockroach Treatment</h1>
+                        <ul>
+                            <li>Elevate your pest control experience with our Premium Cockroach Treatment.</li>
+                            <li>Our comprehensive approach targets cockroaches at their source, ensuring thorough elimination.</li>
+                            <li>Enjoy the convenience of additional services like deep cleaning and long-term monitoring</li>
+                            <li>Experience enhanced protection with advanced techniques and premium-grade products.</li>
+                            <li>Invest in your peace of mind and elevate your home's hygiene standards with our Premium Cockroach Treatment Plan.</li>
+                        </ul>
+                        <h2>To know more about services provided and Price details</h2>
+                        <button id="premium-button">Click here</button>
+                    </div>
                 </div>
             </div>
-            <a href="" class="more-details-regular">Not sure about Treatment Area?</a>
-            <a href=""class="more-details-regular">Click here to Read more</a>
-            <a href="tel:9999300351" class="callback">Callback</a>
-        </div>
-        <div class="pricing" id="premium-cockroach-control-2BHK">
-            <h5 id="premium-cockroach-control-recommendation">Recommended</h5>
-            <h1 id="premium-cockroach-control-heading">Premium Cockroach Treatment</h1>
-            <ul>
-                <li>Spray and Gel Treatment along with Cracks,Sealings and Kitchen Drain Cleaning</li>
-                <li>Complimentary Ants Treatment</li>
-            </ul>
-            <div class="price-details-premium-cockroach-treatment">
-                <div class="pricing-cockroach-premium-offline">
-                    <h3>Payment After Service</h3>
-                    <h1 id="price-cockroach-premium-offline">Rs.5499/-</h1>
-                    <h5>*Price may vary on the basis of Size of Treatment Area</h5>
-                </div>
-                <div class="pricing-cockroach-premium-online">
-                    <h3>Payment Before Service</h3>
-                    <h1 id="price-cockroach-premium-online">Rs.4999/-</h1>
-                    <h5>*Price may vary on the basis of Size of Treatment Area</h5>
-                </div>
-            </div>
-            <a href="" class="more-details-premium">Not sure about Treatment Area?</a>
-            <a href=""class="more-details-premium">Click here to Read more</a>
-            <a href="tel:9999300351" class="callback">Callback</a>
-        </div>
-        <div class="pricing" id="regular-cockroach-control-2BHK">
-            <h5 id="regular-cockroach-control-recommendation">Recommended</h5>
-            <h1 id="regular-cockroach-control-heading">Regular Cockroach Treatment</h1>
-            <ul>
-                <li>Spray and Gel Treatment along with Cracks,Sealings and Kitchen Drain Cleaning</li>
-                <li>No Complimentary Ants Treatment</li>
-            </ul>
-            <div class="price-details-regular-cockroach-treatment">
-                <div class="pricing-cockroach-regular-offline">
-                    <h3>Payment After Service</h3>
-                    <h1 id="price-cockroach-regular-offline">Rs.4799/-</h1>
-                    <h5>*Price may vary on the basis of Size of Treatment Area</h5>
-                </div>
-                <div class="pricing-cockroach-regular-online">
-                    <h3>Payment Before Service</h3>
-                    <h1 id="price-cockroach-premium-online">Rs.4299/-</h1>
-                    <h5>*Price may vary on the basis of Size of Treatment Area</h5>
-                </div>
-            </div>
-            <a href="" class="more-details-regular">Not sure about Treatment Area?</a>
-            <a href=""class="more-details-regular">Click here to Read more</a>
-            <a href="tel:9999300351" class="callback">Callback</a>
-        </div>
     </div>
     <script src="home.js"></script>
 </body>

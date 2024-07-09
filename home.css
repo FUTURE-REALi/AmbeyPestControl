@@ -553,6 +553,8 @@ footer{
     margin: 50px auto;
     padding: 20px;
     border-radius: 10px;
+    background:#20AA4D;
+    color: white;
 }
 
 .location-address{
@@ -562,6 +564,7 @@ footer{
 }
 .location-address a{
     text-decoration: none;
+    color: white;
 }
 .location-address h1{
     text-align: center;

@@ -540,16 +540,6 @@ body{
     text-align: center;
     font-size: 1em;
 }
-
-@media (max-width: 768px) {
-    .gallery {
-        flex-direction: column;
-    }
-
-    .gallery-item img {
-        max-width: 90%;
-    }
-}
 footer{
     position: relative;
     top: 85px;
@@ -602,7 +592,7 @@ footer{
 }
 .faq-header h1 {
     margin-bottom: 10px;
-    color: #007bff;
+    color: #1B5E20;
 }
 .faq-header p {
     font-size: 1.1em;
@@ -620,7 +610,7 @@ footer{
     margin-top: 20px;
 }
 .faq-category h3 {
-    color: #007bff;
+    color: #1B5E20;
     margin-bottom: 10px;
 }
 .faq-item {
